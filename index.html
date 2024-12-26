@@ -11,6 +11,11 @@
             color: #000;
             margin: 0;
             text-align: center;
+ display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             width: 80%;
@@ -51,6 +56,10 @@
 
         /* Mobile Optimization */
         @media (max-width: 768px) {
+ body {
+                display: block;
+                height: auto;
+            }
             .container {
                 width: 90%;
             }
