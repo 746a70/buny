@@ -2,29 +2,68 @@
 <html>
 <head>
     <title>Music - buny's World</title>
+ <link rel="icon" type="image/png" href="favicon.png"> <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile-friendly -->
     <style>
         body {
             font-family: "Times New Roman", serif;
-            background-color: #f5f5dc;
-            margin: 20px;
+            background-color: #f7f7f7;
+            color: #000;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
         }
         h1 {
             font-size: 36px;
             font-weight: bold;
-            text-align: left;
+            margin: 20px 0;
         }
         p {
             font-size: 16px;
         }
-        a {
-            color: #000080;
-            text-decoration: none;
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #555;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            footer {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Music</h1>
-    <p>Explore buny's tracks and creations. More coming soon!</p>
-    <p><a href="index.html">Back to Home</a></p>
+    <div class="container">
+        <h1>music</h1>
+        <p>my original stuffff</p>
+        <footer>
+            <div class="social-icons">
+                <a href="https://soundcloud.com/yourusername" target="_blank">
+                    <img src="soundcloud-icon.png" alt="SoundCloud">
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+            <p>© 2024 buny's World</p>
+        </footer>
+    </div>
 </body>
 </html>
