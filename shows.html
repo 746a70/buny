@@ -10,15 +10,16 @@
             background-color: #f7f7f7;
             color: #000;
             margin: 0;
-            text-align: center;
-display: flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
         }
         .container {
             width: 80%;
+            max-width: 800px;
             margin: 0 auto;
         }
         h1 {
@@ -26,8 +27,14 @@ display: flex;
             font-weight: bold;
             margin: 20px 0;
         }
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 10px 0 30px;
+        }
         p {
             font-size: 16px;
+            line-height: 1.5;
         }
         footer {
             margin-top: 40px;
@@ -39,18 +46,32 @@ display: flex;
             height: 24px;
             margin: 0 5px;
         }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #000080;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
         /* Mobile Optimization */
         @media (max-width: 768px) {
- body {
+            body {
                 display: block;
                 height: auto;
+                text-align: center;
             }
             .container {
                 width: 90%;
             }
             h1 {
                 font-size: 28px;
+            }
+            h2 {
+                font-size: 20px;
             }
             footer {
                 font-size: 10px;
@@ -98,12 +119,12 @@ display: flex;
                     <img src="ig-icon.png" alt="Instagram">
                 </a>
             </div>
-<nav>
+            <nav>
                 <a href="index.html">home</a>
                 <a href="music.html">music</a>
                 <a href="mixes.html">mixes</a>
                 <a href="shows.html">shows</a>
-		<a href="contact.html">contact</a>
+                <a href="contact.html">contact</a>
             </nav>
             <p>© 2024 buny's world</p>
         </footer>
