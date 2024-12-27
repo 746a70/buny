@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>contact - buny</title>
-   <link rel="icon" type="image/png" href="favicon.png"> <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile-friendly -->
     <style>
         body {
@@ -10,41 +10,54 @@
             background-color: #f7f7f7;
             color: #000;
             margin: 0;
-            text-align: center;
-  display: flex;
+            display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+        }
+        header {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #000080;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 20px auto 0;
+            text-align: center;
         }
         h1 {
             font-size: 36px;
             font-weight: bold;
             margin: 20px 0;
         }
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 10px 0 30px;
+        }
         p {
             font-size: 16px;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #555;
-        }
-        .social-icons img {
-            width: 24px;
-            height: 24px;
-            margin: 0 5px;
+            line-height: 1.5;
         }
 
         /* Mobile Optimization */
         @media (max-width: 768px) {
-  body {
-                display: block;
-                height: auto;
+            header {
+                padding: 5px 0;
+            }
+            nav a {
+                font-size: 12px;
             }
             .container {
                 width: 90%;
@@ -52,13 +65,22 @@
             h1 {
                 font-size: 28px;
             }
-            footer {
-                font-size: 10px;
+            h2 {
+                font-size: 20px;
             }
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="music.html">music</a>
+            <a href="mixes.html">mixes</a>
+            <a href="shows.html">shows</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
      <div class="container">
         <h1>contact</h1>
 	<p>info@buny.xyz</p>
