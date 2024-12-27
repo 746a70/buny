@@ -10,41 +10,60 @@
             background-color: #f7f7f7;
             color: #000;
             margin: 0;
-            text-align: center;
-display: flex;
+            display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        p {
-            font-size: 16px;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #555;
+        header {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
         }
         .social-icons img {
             width: 24px;
             height: 24px;
             margin: 0 5px;
         }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #000080;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 10px 0 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
         /* Mobile Optimization */
         @media (max-width: 768px) {
- body {
-                display: block;
-                height: auto;
+            header {
+                padding: 5px 0;
+            }
+            nav a {
+                font-size: 12px;
             }
             .container {
                 width: 90%;
@@ -52,13 +71,30 @@ display: flex;
             h1 {
                 font-size: 28px;
             }
-            footer {
-                font-size: 10px;
+            h2 {
+                font-size: 20px;
             }
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="social-icons">
+            <a href="https://soundcloud.com/djbuny" target="_blank">
+                <img src="sc-icon.png" alt="SoundCloud">
+            </a>
+            <a href="https://instagram.com/terrells.world" target="_blank">
+                <img src="ig-icon.png" alt="Instagram">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="music.html">music</a>
+            <a href="mixes.html">mixes</a>
+            <a href="shows.html">shows</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
     <div class="container">
         <h1>shows</h1>
         <h2>2024</h2>
@@ -89,24 +125,6 @@ display: flex;
 	<p>sep 29, 2024 - new moon by normiecorp - [REDACTED] - vancouver, canada</p>
 	<p>jul 15, 2024 - rodeho - rewind resale - vancouver, canada</p>
 	<p>mar 10, 2024 - pr3br34k vol 1 - rewind resale - vancouver, canada</p>
-        <footer>
-            <div class="social-icons">
-                <a href="https://soundcloud.com/djbuny" target="_blank">
-                    <img src="sc-icon.png" alt="SoundCloud">
-                </a>
-                <a href="https://instagram.com/terrells.world" target="_blank">
-                    <img src="ig-icon.png" alt="Instagram">
-                </a>
-            </div>
-<nav>
-                <a href="index.html">home</a>
-                <a href="music.html">music</a>
-                <a href="mixes.html">mixes</a>
-                <a href="shows.html">shows</a>
-		<a href="contact.html">contact</a>
-            </nav>
-            <p>© 2024 buny's world</p>
-        </footer>
     </div>
 </body>
 </html>
