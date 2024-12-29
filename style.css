@@ -5,7 +5,12 @@ body {
     color: #000; /* Black text */
     margin: 0;
     padding: 0;
-    text-align: center; /* Center-align text globally */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Remove full height */
+    justify-content: flex-start; /* Align content to the top */
 }
 
 /* Header */
