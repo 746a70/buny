@@ -1,16 +1,22 @@
 /* Global Styles */
 body {
     font-family: "Times New Roman", serif;
-    background-color: #f7f7f7; /* Light grey background */
+    background-color: #fff; 
     color: #000; /* Black text */
     margin: 0;
     padding: 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: auto; /* Remove full height */
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: center; /* Vertically centers content */
+    align-items: center; /* Horizontally centers content */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center-aligns text */
+}
+
+/* Container for Page Content */
+.container {
+    width: 80%;
+    max-width: 800px; /* Limits width of the content */
 }
 
 /* Header */
