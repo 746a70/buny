@@ -4,98 +4,17 @@
     <title>shows - buny</title>
     <link rel="icon" type="image/png" href="favicon.png"> <!-- Favicon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile-friendly -->
-    <style>
-        body {
-            font-family: "Times New Roman", serif;
-letter-spacing: -1px;
-            background-color: #f7f7f7;
-            color: #000;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header {
-            width: 100%;
-            background-color: transparent;
-            padding: 50px 0;
-            text-align: center;
-        }
-        nav a {
-            display: inline-block;
-            margin: 0 10px;
-            font-size: 14px;
-            text-decoration: none;
-            color: #000080;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
- footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #555;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        h2 {
-            font-size: 24px;
-            font-weight: normal;
-            margin: 10px 0 30px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        /* Mobile Optimization */
-        @media (max-width: 768px) {
-            header {
-                padding: 5px 0;
-            }
-            nav a {
-                font-size: 12px;
-            }
-            .container {
-                width: 90%;
-            }
-            h1 {
-                font-size: 28px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-footer {
-                font-size: 10px;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="music.html">music</a>
-            <a href="mixes.html">mixes</a>
-            <a href="shows.html">shows</a>
-            <a href="contact.html">contact</a>
-        </nav>
-    </header>
     <div class="container">
-        <h1>shows</h1>
-        <h2>2024</h2>
+        <header-component></header-component>
+    <h1>shows</h1>
+    <h2>2024</h2>
 	<p><a href="https://ra.co/events/2047073">dec 14, 2024 - noise complaint by party people - the well studios - vancouver, canada</a></p>
-	<p><a href="https://www.instagram.com/p/DDI0f5yPZxo/">dec 12, 2024 - bunys world: vol 09, BUNRELEASED - bside radio - vancouver, canada</a></p>
+	<p><a href="https://www.instagram.com/p/DDI0f5yPZxo/">dec 7, 2024 - bunys world: vol 09, BUNRELEASED - bside radio - vancouver, canada</a></p>
 	<p><a href="https://www.instagram.com/p/DBuUWhJzY-L/">nov 2, 2024 - bunys world: vol 08, buny @ werk - bside radio - vancouver, canada</a></p>
 	<p><a href="https://www.instagram.com/p/DBnT89tR2W9/?img_index=1">oct 27, 2024 - binky + friends - bside radio - vancouver, canada</a></p>
 	<p><a href="https://www.instagram.com/p/DAwMzWoS1ww/">oct 25, 2024 - a crazy halloween party by popmisfit - calabash - vancouver, canada</a></p>
@@ -122,9 +41,7 @@ footer {
 	<p><a href="https://www.instagram.com/p/CxWcHXGvTsa/">sep 29, 2024 - new moon by normiecorp - [redacted] - vancouver, canada</a></p>
 	<p><a href="https://www.eventbrite.ca/e/rode-ho-rewind-queer-western-rave-tickets-657236932357?aff=ebdsoporgprofile">jul 15, 2023 - rodeho - rewind resale - vancouver, canada</a></p>
 	<p><a href="https://www.eventbrite.ca/e/pr3br34k-rewind-tickets-530735442997?aff=ebdsoporgprofile">mar 10, 2023 - pr3br34k vol 1 - rewind resale - vancouver, canada</a></p>
-<footer>
-<p>© 2024 buny's world</p>
-</footer>
     </div>
+    <footer-component></footer-component>
 </body>
 </html>
