@@ -49,14 +49,18 @@ header .social-icons img {
 
 /* Headings */
 h1 {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
 }
 h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     margin: 10px 0 30px;
+}
+h3  {
+    font-size: 26px;
+    font-weight: bold;
 }
 
 /* Paragraphs */
@@ -65,8 +69,32 @@ p {
     line-height: 1.5;
 }
 
+/* List Styles */
 ul {
     list-style-type: none;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between list items */
+    text-align: center;
+    text-decoration: underline;
+}
+
+ul li {
+    margin: 0; /* Remove individual list item margins */
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000080;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #000;
 }
 
 /* Footer */
