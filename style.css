@@ -19,7 +19,6 @@ body {
   max-width: 1200px; /* Limits width of the content */
   margin: 0 auto;
   overflow: auto;
-  outline: 2px solid red;
 }
 
 /* Header */
