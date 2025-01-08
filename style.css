@@ -1,133 +1,228 @@
 /* Global Styles */
 body {
-    font-family: "Times New Roman", serif;
-    background-color: #fff; 
-    color: #000; /* Black text */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically centers content */
-    align-items: center; /* Horizontally centers content */
-    height: 100vh; /* Full viewport height */
-    text-align: center; /* Center-aligns text */
+  font-family: "Times New Roman", serif;
+  background-color: #fff; 
+  background-image: url(images/94825ad80fff30c13cccfaf3d2ce4ea8.gif);
+  background-repeat: repeat;
+  color: #000; /* Black text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content */
+  align-items: center; /* Horizontally centers content */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center-aligns text */
 }
 /* Container for Page Content */
 .container {
-    width: 80%;
-    max-width: 800px; /* Limits width of the content */
-    margin: 20px auto 0;
-    text-align: center;
-    overflow: auto;
+  max-width: 1200px; /* Limits width of the content */
+  margin: 0 auto;
+  overflow: auto;
+  outline: 2px solid red;
 }
 
 /* Header */
 header {
-    width: 100%;
-    background-color: transparent;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000080;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    color: #000;
-    text-decoration: underline;
-  }
+  width: 100%;
+  background-color: transparent;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Container for the logo and nav */
+.header-container {
+display: inline-block; /* Makes the container width fit the content */
+text-align: center; /* Centers the content */
+}
+
+/* Logo container and image */
+.logo-container {
+margin-bottom: 15px;
+}
+
+.logo h2 {
+white-space: nowrap; /* Prevents the text from wrapping */
+margin: 0; /* Optional: remove any margin that might affect layout */
+}
+
+.logo {
+max-width: 150px; /* Adjust size as needed */
+height: auto;
+display: block; /* Ensures it behaves like a block element */
+margin: 0 auto; /* Centers the logo within the container */
+}
+
+/* Navigation bar styling */
+nav ul {
+list-style: none;
+margin: 10px 0 0; /* Add space between the image and the nav bar */
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 20px; /* Space between links */
+width: 80%; /* Matches the table width */
+margin: 0 auto; /* Centers the nav links */
+}
+
+nav ul a {
+text-decoration: none;
+color: #000; /* Adjust color */
+font-size: 16px;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #000;
+  text-decoration: underline;
+}
 header .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
 }
 
 /* Headings */
 h1 {
-    font-size: 34px;
-    font-weight: bold;
-    margin: 20px 0;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 10px 0 30px;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0 30px;
 }
 h3  {
-    font-size: 26px;
-    font-weight: bold;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 /* Paragraphs */
 p {
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* List Styles */
+
 ul {
-    list-style-type: none;
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 10px; /* Space between list items */
-    text-align: center;
-    text-decoration: underline;
+  list-style-type: none;
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  display: flex;
+  
+  gap: 10px; /* Space between list items */
+  text-align: center;
+  text-decoration: underline;
 }
 
 ul li {
-    margin: 0; /* Remove individual list item margins */
-    padding: 0;
+  margin: 0; /* Remove individual list item margins */
+  padding: 0;
 }
 
 ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #000080;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000080;
 }
 
 ul li a:hover {
-    text-decoration: underline;
-    color: #000;
+  text-decoration: underline;
+  color: #000;
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
-    font-size: 50px;
-    color: #555;
-    text-align: center;
-  }
-footer .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
+  margin-top: 40px;
+  font-size: 50px;
+  color: #555;
+  text-align: center;
 }
+footer .social-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+
+/* Table styles for show dates*/
+table {
+width: 80%;
+border-collapse: collapse;
+margin: 20px auto;
+}
+
+th, td {
+padding: 8px;
+text-align: left;  /* Default text-align for all cells */
+border: none;  /* Remove borders */
+}
+
+/* Align text in the left column (dates) to the left */
+td:first-child {
+text-align: left;
+}
+
+/* Align text in the right column (locations) to the right */
+td:last-child {
+text-align: right;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+a {
+text-decoration: underline;
+color: #000000;
+}
+
+.center_me_on_page {text-align:center; width:99%; margin:auto;}
+
+
+.nav-links {
+display: flex;
+justify-content: space-between; /* Spreads the links evenly across the width */
+width: 80%; /* Ensures it spans the full width of the parent container */
+margin: 20px auto; /* Centers the navigation links */
+}
+
+.nav-links a {
+text-decoration: underline; /* Underlined by default */
+color: inherit; /* Matches parent color */
+padding: 0 10px; /* Adds slight padding for better spacing */
+}
+
+.image img {
+max-width: 90%; /* Prevents it from exceeding the container width */
+height: auto; /* Keeps the aspect ratio intact */
+display: block; /* Prevents any extra space below the image */
+margin: 0 auto;
+position: relative;
+}
+
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
-    header {
-        padding: 5px 0;
-    }
-    nav a {
-        font-size: 12px;
-    }
-    .container {
-        width: 90%;
-    }
-    h1 {
-        font-size: 28px;
-    }
-    h2 {
-        font-size: 20px;
-    }
+  header {
+      padding: 5px 0;
+  }
+  nav a {
+      font-size: 12px;
+  }
+  .container {
+      width: 90%;
+  }
+  h1 {
+      font-size: 28px;
+  }
+  h2 {
+      font-size: 20px;
+  }
 footer {
-        font-size: 10px;
-    }
+      font-size: 10px;
+  }
 }
+
