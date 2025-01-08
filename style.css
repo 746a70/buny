@@ -15,11 +15,23 @@ body {
   text-align: center; /* Center-aligns text */
 }
 /* Container for Page Content */
+
+/* Default container styles for all pages */
 .container {
-  max-width: 1200px; /* Limits width of the content */
-  margin: 0 auto;
+  width: 80%;
+  max-width: 800px; /* Limits width of the content */
+  margin: 20px auto 0;
+  text-align: center;
   overflow: auto;
 }
+
+/* Specific container styles for pages with class 'test-one' */
+.test-one .container {
+  max-width: 1200px; /* Limits width of the content */
+  margin: 10px auto 0; /* Adjusted to match the default margin */
+  overflow: auto;
+}
+
 
 /* Header */
 header {
