@@ -58,8 +58,8 @@ margin: 0; /* Optional: remove any margin that might affect layout */
 }
 
 .logo {
-max-width: 256px; /* Adjust size as needed */
-height: 256px;
+max-width: 0 auto; /* Adjust size as needed */
+height: auto;
 display: block; /* Ensures it behaves like a block element */
 margin: 0 auto 10px; /* Centers the logo within the container */
 }
