@@ -49,6 +49,7 @@ text-align: center; /* Centers the content */
 
 /* Logo container and image */
 .logo-container {
+max-width: auto;
 margin-bottom: 20px;
 }
 
