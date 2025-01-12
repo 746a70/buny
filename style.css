@@ -49,7 +49,7 @@ text-align: center; /* Centers the content */
 
 /* Logo container and image */
 .logo-container {
-margin-bottom: 15px;
+margin-bottom: 20px;
 }
 
 .logo h2 {
@@ -58,10 +58,10 @@ margin: 0; /* Optional: remove any margin that might affect layout */
 }
 
 .logo {
-max-width: 150px; /* Adjust size as needed */
+max-width: 0 auto; /* Adjust size as needed */
 height: auto;
 display: block; /* Ensures it behaves like a block element */
-margin: 0 auto; /* Centers the logo within the container */
+margin: 0 auto -85px; /* Centers the logo within the container */
 }
 
 /* Navigation bar styling */
@@ -101,13 +101,19 @@ h1 {
   margin: 20px 0;
 }
 h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
-  margin: 10px 0 30px;
+  margin: 10px 0 20px;
 }
 h3  {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: -10px;
+}
+h4  {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px 10px;
 }
 
 /* Paragraphs */
@@ -201,7 +207,7 @@ margin: 20px auto; /* Centers the navigation links */
 }
 
 .nav-links a {
-text-decoration: underline; /* Underlined by default */
+text-decoration: none; /* Underlined by default */
 color: inherit; /* Matches parent color */
 padding: 0 10px; /* Adds slight padding for better spacing */
 }
@@ -213,7 +219,6 @@ display: block; /* Prevents any extra space below the image */
 margin: 0 auto;
 position: relative;
 }
-
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
