@@ -61,7 +61,7 @@ margin: 0; /* Optional: remove any margin that might affect layout */
 max-width: 75%; /* Adjust size as needed */
 height: auto;
 display: block; /* Ensures it behaves like a block element */
-margin: 0 auto -50px; /* Centers the logo within the container */
+margin: 0 auto 0px; /* Centers the logo within the container */
 }
 
 /* Navigation bar styling */
