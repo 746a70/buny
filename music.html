@@ -20,6 +20,93 @@
 <br>
 <iframe width="60%" height="175" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1957915815&color=%23080808&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djbuny" title="buny" target="_blank" style="color: #cccccc; text-decoration: none;">buny</a> · <a href="https://soundcloud.com/djbuny/dancew-140" title="dancew" target="_blank" style="color: #cccccc; text-decoration: none;">dancew</a></div>
 </div>
+
+<!--SCRIPTS-->
+<div id="app" style="width:40px; height:40px; position:absolute; right:1115px; bottom:420px;">
+    <!-- Webamp will attempt to center itself within this div -->
+</div>
+<script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+<script>
+    const Webamp = window.Webamp;
+    const webamp = new Webamp({
+        initialTracks: [
+          {
+                metaData: {
+                    artist: "buny",
+                    title: "pussy on the rims"
+                },
+                // NOTE: Your audio file must be served from the same domain as your HTML
+                // file, or served with permissive CORS HTTP headers:
+                // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                url: "/music/pussy on the rims edit v2 .mp3"
+            },
+            {
+                metaData: {
+                    artist: "buny",
+                    title: "dancew"
+                },
+                // NOTE: Your audio file must be served from the same domain as your HTML
+                // file, or served with permissive CORS HTTP headers:
+                // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                url: "/music/VogFight.mp3"
+            },
+            {
+                metaData: {
+                    artist: "buny",
+                    title: "bee"
+                },
+                // NOTE: Your audio file must be served from the same domain as your HTML
+                // file, or served with permissive CORS HTTP headers:
+                // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                url: "/music/BlackWingInterface.mp3"
+            },
+        ],
+         initialSkin: {
+    url: "/waskins/Aque.wsz"
+},
+    });
+
+    // Returns a promise indicating when it's done loading.
+    webamp.renderWhenReady(document.getElementById('app'));
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</script><script src="https://unpkg.com/draggabilly/dist/draggabilly.pkgd.min.js"></script>
+<script>
+$(document).ready(function(){
+if ($(window).width() > 850) {$('.draggable').draggabilly({handle:'.handle'});};
+$(window).on('resize', function(){
+if ($(window).width() < 850) {$('.draggable').draggabilly('destroy')}
+else {$('.draggable').draggabilly({handle:'.handle'});}
+});
+$('body').find('b').each(function(){$('b').addClass('aesthetic-font-modifier-gradient-purple-blue');});
+$('.navigation').append('<li class="header-link credit"><a href="//aurthms.tumblr.com">Credit</a></li>');
+$('#links').click(function(){
+$('#links').addClass('active');
+$('#about').removeClass('active');
+$('#faq').removeClass('active');
+$('.nav').addClass('show');
+$('.abt').removeClass('show');
+$('.askd').removeClass('show');
+});
+$('#about').click(function(){
+$('#about').addClass('active');
+$('#links').removeClass('active');
+$('#faq').removeClass('active');
+$('.abt').addClass('show');
+$('.nav').removeClass('show');
+$('.askd').removeClass('show');
+});
+$('#faq').click(function(){
+$('#faq').addClass('active');
+$('#links').removeClass('active');
+$('#about').removeClass('active');
+$('.askd').addClass('show');
+$('.nav').removeClass('show');
+$('.abt').removeClass('show');
+});
+});
+</script>
 <footer-component></footer-component>
 </body>
 </html>
