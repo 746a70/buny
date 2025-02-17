@@ -112,7 +112,7 @@ $('.abt').removeClass('show');
     // Function to disable Webamp on mobile devices
     function disableWebampOnMobile() {
       if (window.innerWidth <= 768) { // This sets the mobile threshold (you can adjust it)
-        const webampContainer = document.getElementById('webamp-container'); // Replace with your Webamp container ID
+        const webampContainer = document.getElementById('app'); // Corrected to match the Webamp container ID
         if (webampContainer) {
           webampContainer.style.display = 'none'; // Hides Webamp on mobile
         }
@@ -129,8 +129,7 @@ $('.abt').removeClass('show');
   
     // Optionally recheck on window resize in case the user rotates their device
     window.onresize = disableWebampOnMobile;
-  </script>
-  
+</script>
 <footer-component></footer-component>
 </body>
 </html>
