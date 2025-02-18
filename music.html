@@ -48,17 +48,17 @@
                 // NOTE: Your audio file must be served from the same domain as your HTML
                 // file, or served with permissive CORS HTTP headers:
                 // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-                url: "/music/pussy on the rims edit v2 .mp3"
+                url: "/music/uhh cryng in my cave.m4a"
             },
             {
                 metaData: {
                     artist: "buny",
-                    title: "bee"
+                    title: "b33"
                 },
                 // NOTE: Your audio file must be served from the same domain as your HTML
                 // file, or served with permissive CORS HTTP headers:
                 // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-                url: "/music/pussy on the rims edit v2 .mp3"
+                url: "/music/b33.m4a"
             },
         ],
          initialSkin: {
@@ -106,6 +106,29 @@ $('.nav').removeClass('show');
 $('.abt').removeClass('show');
 });
 });
+</script>
+
+<script>
+    // Function to disable Webamp on mobile devices
+    function disableWebampOnMobile() {
+      if (window.innerWidth <= 768) { // This sets the mobile threshold (you can adjust it)
+        const webampContainer = document.getElementById('app'); // Corrected to match the Webamp container ID
+        if (webampContainer) {
+          webampContainer.style.display = 'none'; // Hides Webamp on mobile
+        }
+        
+        // Optionally stop any Webamp activity (depending on your implementation)
+        if (typeof webamp !== 'undefined' && webamp) {
+          webamp.pause(); // Example function, use one that fits your setup
+        }
+      }
+    }
+  
+    // Call the function when the page loads
+    window.onload = disableWebampOnMobile;
+  
+    // Optionally recheck on window resize in case the user rotates their device
+    window.onresize = disableWebampOnMobile;
 </script>
 <footer-component></footer-component>
 </body>
