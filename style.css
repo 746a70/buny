@@ -1,10 +1,13 @@
 /* Global Styles */
 body {
   font-family: "Times New Roman", serif;
-  background-color: #fff; 
-  background-image: url(images/94825ad80fff30c13cccfaf3d2ce4ea8.gif);
-  background-repeat: repeat;
-  color: #000; /* Black text */
+  background-color: #101011; 
+  background-image: url(images/buny-black.gif), url(images/spacebw2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+   -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  color: #fff; /* Black text */
   margin: 0;
   padding: 0;
   display: flex;
@@ -20,7 +23,31 @@ body {
 .container {
   width: 80%;
   max-width: 800px; /* Limits width of the content */
+  max-height: 450px;
   margin: 20px auto 0;
+  background:none;  
+  text-align: center;
+  font-weight: 900;
+  overflow: auto;
+}
+
+.container2 {
+  width: 80%;
+  max-width: 1200px; /* Limits width of the content */
+  max-height: 1080px;
+  margin: 20px auto 0; 
+  background: none; 
+  text-align: center;
+  font-weight: bold;
+  overflow: auto;
+}
+
+.container3 {
+  width: 80%;
+  max-width: 800px; /* Limits width of the content */
+  max-height: 100px;
+  background: rgba(255, 208, 0, 0.5);
+  margin: 20px auto 0; 
   text-align: center;
   overflow: auto;
 }
@@ -48,7 +75,7 @@ text-align: center; /* Centers the content */
 
 /* Logo container and image */
 .logo-container {
-margin-bottom: 20px;
+margin-bottom: 0px;
 }
 
 .logo h2 {
@@ -57,7 +84,7 @@ margin: 0; /* Optional: remove any margin that might affect layout */
 }
 
 .logo {
-max-width: 75%; /* Adjust size as needed */
+max-width: 100%; /* Adjust size as needed */
 height: auto;
 display: block; /* Ensures it behaves like a block element */
 margin: 0 auto 0px; /* Centers the logo within the container */
@@ -78,14 +105,17 @@ margin: 0 auto; /* Centers the nav links */
 nav ul a {
 text-decoration: none;
 color: #000; /* Adjust color */
+background-color: #fff;
 font-size: 16px;
 font-weight: bold;
+border-style: solid;
+padding: 4px;
 transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #000;
-  text-decoration: underline;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
 }
 header .social-icons img {
   width: 24px;
@@ -112,7 +142,15 @@ h3  {
 h4  {
     font-size: 20px;
     font-weight: bold;
-    margin: 10px 0px 10px;
+    margin: 0px 0px 10px;
+}
+h5  {
+    font-size: 18px;
+    color:#fff;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style:italic;
+    margin: -20px 0px 0px 0px;
 }
 
 /* Paragraphs */
@@ -131,30 +169,31 @@ ul {
   
   gap: 10px; /* Space between list items */
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 ul li {
   margin: 0; /* Remove individual list item margins */
-  padding: 0;
+  padding: 8px;
 }
 
 ul li a {
   text-decoration: none;
   font-size: 18px;
-  color: #000080;
+  color:#000;
 }
 
 ul li a:hover {
+  text-transform: uppercase;
   text-decoration: underline;
-  color: #000;
+
 }
 
 /* Footer */
 footer {
   margin-top: 40px;
   font-size: 50px;
-  color: #555;
+  color: #bebebe;
   text-align: center;
 }
 footer .social-icons img {
@@ -192,7 +231,7 @@ background-color: #f2f2f2;
 
 a {
 text-decoration: underline;
-color: #000000;
+color: #fff;
 }
 
 .center_me_on_page {text-align:center; width:99%; margin:auto;}
