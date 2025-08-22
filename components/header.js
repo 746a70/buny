@@ -9,8 +9,6 @@ class Header extends HTMLElement {
         <nav>
         <ul>
           <a href="index.html">home</a>
-          <a href="music.html">music</a>
-          <a href="construction.html">mixes</a>
           <a href="shows.html">shows</a>
           <a href="contact.html">contact</a>
           </ul>
