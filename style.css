@@ -2,11 +2,6 @@
 body {
   font-family: "Times New Roman", serif;
   background-color: #101011; 
-  background-image: url(images/buny-black.gif), url(images/spacebw2.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50% ;
-   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
   color: #fff; /* Black text */
   margin: 0;
   padding: 0;
@@ -18,6 +13,24 @@ body {
   text-align: center; /* Center-aligns text */
 }
 /* Container for Page Content */
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
 
 /* Default container styles for all pages */
 .container {
@@ -90,6 +103,7 @@ display: block; /* Ensures it behaves like a block element */
 margin: 0 auto 0px; /* Centers the logo within the container */
 }
 
+
 /* Navigation bar styling */
 nav ul {
 list-style: none;
@@ -108,7 +122,7 @@ color: #000; /* Adjust color */
 background-color: #fff;
 font-size: 16px;
 font-weight: bold;
-border-style: solid;
+border-style: none;
 padding: 4px;
 transition: color 0.3s;
 }
@@ -132,7 +146,7 @@ h1 {
 h2 {
   font-size: 30px;
   font-weight: bold;
-  margin: 10px 0 20px;
+  margin: 0px 0 0px;
 }
 h3  {
   font-size: 24px;
@@ -142,7 +156,7 @@ h3  {
 h4  {
     font-size: 20px;
     font-weight: bold;
-    margin: 0px 0px 10px;
+    margin: 0px 0px 0px;
 }
 h5  {
     font-size: 18px;
@@ -150,7 +164,7 @@ h5  {
     font-weight: bold;
     font-variant: small-caps;
     font-style:italic;
-    margin: -20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 /* Paragraphs */

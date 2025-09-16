@@ -3,8 +3,8 @@ class Header extends HTMLElement {
     super();
   }
 
-  connectedCallback() {
-    this.innerHTML = `
+  connectedCallback() {  
+    this.innerHTML = 
       <header>
         <nav>
         <ul>
