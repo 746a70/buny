@@ -119,24 +119,24 @@ header .social-icons img {
 h1 {
   font-size: 16px;
   font-weight: bold;
-  margin: 0px 0 0px;
+  margin: 0;
 }
 
 h2 {
   font-size: 10px;
   font-weight: 100;
-  margin: 0px 0 0px;
+  margin: 0;
 }
 
 h3  {
   font-size: 10px;
-  margin-bottom: 0px 0 0px;
+  margin: 0;
 }
 
 /* Paragraphs */
 p {
   font-size: 12px;
-  line-height: 0.5;
+  line-height: 1;
 }
 
 /* List Styles */
