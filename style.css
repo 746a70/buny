@@ -4,14 +4,11 @@ html, body {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-family: monospace;
   background-color: #ffffff; 
   color: #000000;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
