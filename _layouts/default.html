@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-  </head>
+</head>
 <body>
-
+<div class="master-wrapper">
   <header>
     
   </header>
   
   <main class="container">
     {{ content }}
-  </main>
-  
-  <footer>
+
+     <footer>
     <p>&copy; {{ site.time | date: '%Y' }} bunys world</p>
   </footer>
-  
+    
+  </main>
 </body>
+</div>
 </html>
