@@ -16,6 +16,6 @@ title: buny
 
 ### [past shows](/shows.html) ###
 
-[instagram](https://instagram.com/buny________)
-[soundcloud](https://soundcloud.com/djbuny)
-[resident advisor](https://ra.co/bunyy)
+[instagram](https://instagram.com/buny________)  
+[soundcloud](https://soundcloud.com/djbuny)  
+[resident advisor](https://ra.co/bunyy)  
