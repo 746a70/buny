@@ -3,7 +3,6 @@ layout: null
 title: buny
 ---
 
-<div class="container">
     <h1>buny</h1>
       <p><a href="mailto:book@buny.co">contact</a></p>
       <br>
