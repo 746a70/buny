@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div class="master-wrapper">
-  <header>
-    
-  </header>
-  
-  <main class="container">
-    {{ content }}
-
-     <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} bunys world</p>
-  </footer>
-    
-  </main>
-</body>
+<main class="container">
+{{ content }}
+<footer>
+<p>&copy; {{ site.time | date: '%Y' }} bunys world</p>
+</footer>
+</main>
 </div>
+</body>
 </html>
