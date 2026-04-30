@@ -1,4 +1,11 @@
-/* Wrapper to handle vertical centering */
+body {
+  font-family: monospace;
+  background-color: #ffffff; 
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
 .master-wrapper {
   display: flex;
   flex-direction: column;
@@ -8,65 +15,26 @@
   width: 100%;
 }
 
-/* Global Styles */
-body {
-  font-family: monospace;
-  background-color: #ffffff; 
-  color: #000000; /* Black text */
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
-
-/* Default container styles for all pages */
 .container {
   width: 90%;
-  max-width: 800px; /* Limits width of the content */
+  max-width: 800px;
   padding: 20px;
-  background: none;  
   text-align: left;
 }
 
-/* Headings */
 h1 { font-size: 16px; font-weight: bold; margin: 0; }
 h2 { font-size: 14px; font-weight: 100; margin: 0; }
 h3 { font-size: 12px; margin: 0; }
-h4 { font-size: 12px; font-variant: small-caps; font-style: italic; margin: 0; }
-h5 { font-size: 22px; font-variant: small-caps; }
-
-/* Paragraphs */
-p {
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-
-/* Header & Nav */
-header {
-  width: 100%;
-  padding: 30px 0;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
+p { font-size: 14px; margin-bottom: 15px; }
 
 footer {
   margin-top: 40px;
   border-top: 1px solid #eee;
   padding-top: 10px;
-  text-alight: left;
+}
 
-/* Mobile Optimization */
 @media (max-width: 768px) {
-  .container {
-      width: 95%;
-      margin: 20px auto;
-  }
+  .container { width: 95%; }
   h1 { font-size: 22px; }
   h2 { font-size: 16px; }
-  footer { font-size: 10px; text-align: center; padding: 20px; }
 }
