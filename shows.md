@@ -1,7 +1,7 @@
---
+---
 layout: default
 title: shows
---
+---
 
 # shows
 {% for show in site.data.shows %}
