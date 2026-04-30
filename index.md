@@ -3,20 +3,18 @@ layout: null
 title: buny
 ---
 
-    <h1>buny</h1>
-      <p><a href="mailto:book@buny.co">contact</a></p>
+# buny
+<a href="mailto:book@buny.co">contact</a>
       <br>
-    <h2>upcoming</h2>
-      {% for show in site.data.shows %}
-      <a href="{{ show.link }}">
-      <p>{{ show.date }} - {{ show.title }} — {{ show.location }}</p>
-      </a>
-      {% endfor %}
-      <br>
-    <h3><a href="shows.html">past shows</a></h3>
-      <br>
-      <br>
-    <p><a href="https://instagram.com/buny________">instagram</a></p>
-    <p><a href="https://soundcloud.com/djbuny">soundcloud</a></p>
-    <p><a href="https://ra.co/bunyy">resident advisor</a></p>
+## upcoming
+{% for show in site.data.shows %}
+<a href="{{ show.link }}">
+<p>{{ show.date }} - {{ show.title }} — {{ show.location }}</p>
+</a>
+{% endfor %}
+<br>
+### [past shows](/shows.html) ###
 
+[instagram](https://instagram.com/buny________)
+[soundcloud](https://soundcloud.com/djbuny)
+[resident advisor](https://ra.co/bunyy)
