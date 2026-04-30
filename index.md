@@ -2,21 +2,8 @@
 layout: null
 title: buny
 ---
-<html>
-<head>
-  <title>buny</title>
-  
-  
-  <!-- Favicon -->
-   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Mobile-friendly -->
-  
-  <link rel="stylesheet" href="style.css" />
-  
-</head>
-<body>
-  <div class="container">
+
+<div class="container">
     <h1>buny</h1>
       <p><a href="mailto:book@buny.co">contact</a></p>
       <br>
