@@ -6,12 +6,12 @@ title: buny
 <head>
   <title>buny</title>
   
-  <link rel="icon" type="image/png" href="favicon.png" />
   
   <!-- Favicon -->
+   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <!-- Mobile-friendly -->
+  
   <link rel="stylesheet" href="style.css" />
   
 </head>
@@ -33,5 +33,4 @@ title: buny
     <p><a href="https://instagram.com/buny________">instagram</a></p>
     <p><a href="https://soundcloud.com/djbuny">soundcloud</a></p>
     <p><a href="https://ra.co/bunyy">resident advisor</a></p>
-</body>
-</html>
+
