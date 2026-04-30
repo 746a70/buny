@@ -5,7 +5,9 @@ title: shows
 
 # shows
 {% for show in site.data.shows %}
-  <a href="{{ show.link }}" style="display: block; margin-bottom: 10px;">
-    <span>{{ show.date }} - {{ show.title }} — {{ show.location }}</span>
-  </a>
+<div style="margin-bottom: 10px;">
+<a href="{{ show.link }}">{{ show.date }} - {{ show.title }} — {{ show.location }}</a>
+</div>
 {% endfor %}
+
+[Back Home]({{ '/' | relative_url }})
