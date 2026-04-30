@@ -9,10 +9,11 @@ title: buny
 ## upcoming
 
 {% for show in site.data.shows %}
-<a href="{{ show.link }}">
-<p>{{ show.date }} - {{ show.title }} — {{ show.location }}</p>
-</a>
+  <a href="{{ show.link }}" style="display: block; margin-bottom: 10px;">
+    <span>{{ show.date }} - {{ show.title }} — {{ show.location }}</span>
+  </a>
 {% endfor %}
+
 ### [past shows](/shows.html) ###
 
 [instagram](https://instagram.com/buny________)
