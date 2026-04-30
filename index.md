@@ -20,7 +20,7 @@ title: buny
   {% endif %}
 {% endfor %}
 
-### [past shows](/shows.html) ###
+### [past shows](/shows.md) ###
 
 [instagram](https://instagram.com/buny________)  
 [soundcloud](https://soundcloud.com/djbuny)  
