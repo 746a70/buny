@@ -1,7 +1,6 @@
 ---
 layout: null
 ---
-<!DOCTYPE html>
 <html>
 <head>
   <title>buny</title>
