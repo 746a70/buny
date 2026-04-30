@@ -18,5 +18,4 @@ this web app has been created with HTML and CSS.
 
 ## contact
 book@buny.co
-(https://instagram.com/buny________)
-https://soundcloud.com/djbuny
+
