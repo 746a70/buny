@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -13,14 +14,9 @@ body {
   padding: 0;
 }
 
-.master-wrapper {
-  width: 100%;
-}
-
 .container {
   width: 90%;
   max-width: 800px;
-  padding: 20px;
   text-align: left;
 }
 
