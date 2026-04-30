@@ -4,16 +4,17 @@ html, body {
 }
 
 body {
-  display: grid;
-  place-items: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: monospace;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   color: #000000;
 }
 
 .container {
-  width: 90%;
-  max-width: 800px;
+  width: min(90%, 800px);
   text-align: left;
 }
 
