@@ -12,15 +12,13 @@ title: buny
 {% for show in site.data.shows %}
 {% assign show_date = show.date | date: '%s' %}
 {% if show_date >= current_date %}
-<div style="margin-bottom:15px;">
-<a href="{{ show.link }}" style="display: block; margin-bottom: 10px;">
-<span>{{ show.date }} - {{ show.title }} — {{ show.location }}</span>
-</a>
+<div style="margin-bottom:10px;">
+<a href="{{ show.link }}">{{ show.date }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
 {% endfor %}
 
-### [past shows]
+### [past shows](/shows.html)
 
 # socials
 
