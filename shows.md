@@ -1,6 +1,7 @@
 ---
 layout: default
 title: shows
+permalink: /shows.html
 ---
 
 # shows
