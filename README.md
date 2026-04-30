@@ -1,7 +1,7 @@
 ## **about the project**
 this website is a personal portfolio for the dj and artist known as buny. 
 
-# **purpose**
+## **purpose**
 this website is designed to be a "one-stop shop" for everything related to buny, focusing on:
 
 live shows: real-time announcements and direct links to ticket platforms
