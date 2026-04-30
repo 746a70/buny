@@ -20,7 +20,7 @@ title: buny
 {% endif %}
 {% endfor %}
 
-### [past shows]({{ '/shows/' | relative_url }})
+### [past shows]('/shows/')
 
 # socials
 
