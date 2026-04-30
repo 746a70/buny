@@ -11,4 +11,4 @@ permalink: /shows.html
 </div>
 {% endfor %}
 
-[Back Home]({{ '/' | relative_url }})
+[Back Home](/)
