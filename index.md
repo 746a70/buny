@@ -20,7 +20,7 @@ title: buny
 {% endif %}
 {% endfor %}
 
-### [past shows](/shows.html)
+### [past shows]
 
 # socials
 
