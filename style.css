@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  font-family: monospace;
+  background-color: #ffffff; 
+  color: #000000; /* Black text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content */
+  align-items: center; /* Horizontally centers content */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center-aligns text */
+}
+
+/* Container for Page Content */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Default container styles for all pages */
+.container {
+  width: 100%;
+  max-width: 800px; /* Limits width of the content */
+  max-height: auto;
+  margin: 20px auto 0;
+  background: none;  
+  text-align: left;
+  overflow: auto;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: transparent;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Container for the logo and nav */
+.header-container {
+display: inline-block; /* Makes the container width fit the content */
+text-align: center; /* Centers the content */
+}
+
+/* Logo container and image */
+.logo-container {
+margin-bottom: 0px;
+}
+
+.logo h2 {
+white-space: nowrap; /* Prevents the text from wrapping */
+margin: 0; /* Optional: remove any margin that might affect layout */
+}
+
+.logo {
+max-width: 100%; /* Adjust size as needed */
+height: auto;
+display: block; /* Ensures it behaves like a block element */
+margin: 0 auto 0px; /* Centers the logo within the container */
+}
+
+
+/* Headings */
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 10px;
+  font-weight: 100;
+  margin: 0;
+}
+
+h3  {
+  font-size: 10px;
+  margin: 0;
+}
+
+h4  {
+  font-size: 16px;
+  font-variant: small-caps;
+  font-style: italic;
+  margin: 0;
+}
+
+h5  {
+  font-size: 22px;
+  font-variant: small-caps;
+}
+
+/* Paragraphs */
+p {
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  header {
+      padding: 5px 0;
+  }
+  nav a {
+      font-size: 12px;
+  }
+  .container {
+      width: 90%;
+  }
+  h1 {
+      font-size: 28px;
+  }
+  h2 {
+      font-size: 20px;
+  }
+footer {
+      font-size: 10px;
+  }
+}
