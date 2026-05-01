@@ -4,10 +4,9 @@ title: buny
 ---
 
 # buny
-<a href="mailto:book@buny.co">contact</a>
-      <br>
-## upcoming
+<a href="mailto:book@buny.co">contact</a>  
 
+## upcoming  
 {% assign current_date = site.time | date: '%s' %}
 {% for show in site.data.shows %}
 {% assign show_date = show.date | date: '%s' %}
@@ -16,9 +15,9 @@ title: buny
 <a href="{{ show.link }}">{{ show.date }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
-{% endfor %}
+{% endfor %}    
 
-### [past shows]({{ '/shows.html' | relative_url }})
+### [past shows]({{ '/shows.html' | relative_url }})    
 
 # socials
 
