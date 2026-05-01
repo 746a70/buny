@@ -11,13 +11,14 @@ permalink: /shows.html
 <h3>{{ year.name }}</h3>
 {% assign sorted_items = year.items | sort: 'date' | reverse %}
 {% for show in sorted_items %}
-  {% assign display_date = show.date | date: '%B %-d, %Y' | downcase %}
-  {% if show.kind == 'listen' %}
-<p>{{ display_date }} - {{ show.title | remove: ' - bside radio' }}, bside radio - {{ show.location }}{% if show.link and show.link != '' %} | <a href="{{ show.link }}">[listen]</a>{% endif %}</p>
+  {% capture show_text %}{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} - {{ show.location }}{% endcapture %}
+  {% if show.link and show.link != '' %}
+<p><a href="{{ show.link }}">{{ show_text | strip }}</a></p>
   {% else %}
-<p>{{ display_date }} - {{ show.title }}, location - {{ show.location }}{% if show.link and show.link != '' %} | <a href="{{ show.link }}">[tickets]</a>{% endif %}</p>
+<p>{{ show_text | strip }}</p>
   {% endif %}
 {% endfor %}
 {% endfor %}
 
-[Back Home]({{ '/' | relative_url }})
+[< home]({{ '/' | relative_url }})
+
