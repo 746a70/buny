@@ -6,12 +6,19 @@ permalink: /shows.html
 
 # shows
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
-{% for year in grouped_shows %}
+{% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
+{% for year in sorted_years %}
 <h3>{{ year.name }}</h3>
 {% assign sorted_items = year.items | sort: 'date' | reverse %}
 {% for show in sorted_items %}
-<p>{% if show.link and show.link != '' %}{% if show.kind == 'listen' %}[listen]({{ show.link }}){% else %}[tickets]({{ show.link }}){% endif %} {% endif %}{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} - {{ show.location }}</p>
+  {% capture show_text %}{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} - {{ show.location }}{% endcapture %}
+  {% if show.link and show.link != '' %}
+<p><a href="{{ show.link }}">{{ show_text | strip }}</a></p>
+  {% else %}
+<p>{{ show_text | strip }}</p>
+  {% endif %}
 {% endfor %}
 {% endfor %}
 
-[< home](/)
+[< home]({{ '/' | relative_url }})
+
