@@ -4,32 +4,58 @@ html, body {
 }
 
 body {
-  display: grid;
-  place-items: center;
-  font-family: monospace;
-  background-color: #ffffff; 
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #ffffff;
   color: #000000;
 }
 
 .container {
-  width: 90%;
-  max-width: 800px;
+  width: min(90%, 800px);
   text-align: left;
 }
 
 h1 { font-size: 16px; font-weight: bold; margin: 0; }
 h2 { font-size: 14px; font-weight: 100; margin: 0; }
-h3 { font-size: 12px; margin: 0; }
-p { font-size: 14px; margin-bottom: 15px; }
+h3 { font-size: 12px; font-style: italic; font-weight: 400; margin: 0; }
+p { font-size: 16px; margin-bottom: 15px; }
+a { font-size: 16px; }
 
 footer {
   margin-top: 40px;
   border-top: 1px solid #eee;
   padding-top: 10px;
+  font-size: 12pt;
+  color: #555;
+  font-style: italic;
+}
+
+.page-shows .container {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-shows .shows-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 12px;
+}
+
+.page-shows footer {
+  margin-top: 16px;
 }
 
 @media (max-width: 768px) {
   .container { width: 95%; }
   h1 { font-size: 22px; }
   h2 { font-size: 16px; }
+
+  .page-shows .container {
+    height: 92vh;
+  }
 }

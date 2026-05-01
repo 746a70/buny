@@ -4,8 +4,9 @@ title: buny
 ---
 
 # buny
-<a href="mailto:book@buny.co">contact</a>
-      <br>
+## producer, dj
+[about]({{ '/about.html' | relative_url }}) | <a href="mailto:book@buny.co">contact</a>
+<br>
 ## upcoming
 
 {% assign current_date = site.time | date: '%s' %}
@@ -13,12 +14,12 @@ title: buny
 {% assign show_date = show.date | date: '%s' %}
 {% if show_date >= current_date %}
 <div style="margin-bottom:10px;">
-<a href="{{ show.link }}">{{ show.date }} - {{ show.title }} — {{ show.location }}</a>
+<a href="{{ show.link }}">{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
 {% endfor %}
 
-### [past shows](shows.html)
+### [past shows]({{ '/shows.html' | relative_url }})
 
 # socials
 
