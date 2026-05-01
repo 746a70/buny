@@ -38,3 +38,10 @@ footer {
   h1 { font-size: 22px; }
   h2 { font-size: 18px; }
 }
+
+
+.shows-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
