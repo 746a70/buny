@@ -17,13 +17,9 @@ title: buny
 {% endif %}
 {% endfor %}    
 
-### [past shows]({{ '/shows.html' | relative_url }})    
-   
-    
+### [past shows]({{ '/shows.html' | relative_url }})      
 ## socials   
 
 [instagram](https://instagram.com/buny________)   
-
 [soundcloud](https://soundcloud.com/djbuny)   
-
 [resident advisor](https://ra.co/bunyy)   
