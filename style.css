@@ -18,7 +18,7 @@ body {
 
 .container {
   width: min(90%, 800px);
-  max-height: calc(100vh - 40px);
+  max-height: calc(100vh - 32px);
   overflow-y: auto;
   text-align: left;
 }
