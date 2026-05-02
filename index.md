@@ -14,7 +14,7 @@ title: buny
 {% assign show_date = show.date | date: '%s' %}
 {% if show_date >= current_date %}
 <div style="margin-bottom:10px;">
-<a href="{{ show.link }}">{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} — {{ show.location }}</a>
+<a href="{{ show.link }}">{{ show.date | date: '%b %-d, %Y' | downcase }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
 {% endfor %}
