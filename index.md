@@ -16,8 +16,8 @@ title: buny
 <a href="{{ show.link }}">{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
-{% endfor %}  
-  
+{% endfor %}
+
 ## [past shows]({{ '/shows.html' | relative_url }})  
   
 [instagram](https://instagram.com/buny________)  
