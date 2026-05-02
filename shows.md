@@ -18,7 +18,6 @@ permalink: /shows.html
 <p>{{ show_text | strip }}</p>
   {% endif %}
 {% endfor %}
-<hr class="year-divider">
 {% endfor %}
 
 [< home]({{ '/' | relative_url }})
