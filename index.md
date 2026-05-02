@@ -2,6 +2,7 @@
 layout: default
 title: buny
 ---
+<img src="{{ '/images/logo360.gif' | relative url }}">
 
 # buny
 ## dj, producer  
