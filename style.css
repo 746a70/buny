@@ -55,9 +55,3 @@ footer {
   overflow-y: auto;
   padding-right: 8px;
 }
-
-.year-divider {
-  border: 0;
-  border-top: 1px solid #eee;
-  margin: 16px 0 22px;
-}
