@@ -8,6 +8,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
   font-family: monospace;
   background-color: #ffffff;
   color: #000000;
@@ -15,6 +18,8 @@ body {
 
 .container {
   width: min(90%, 800px);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
   text-align: left;
 }
 
@@ -34,7 +39,11 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .container { width: 95%; }
+  body { padding: 16px; }
+  .container {
+    width: 100%;
+    max-height: calc(100vh - 32px);
+  }
   h1 { font-size: 22px; }
   h2 { font-size: 18px; }
 }
