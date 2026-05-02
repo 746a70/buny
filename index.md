@@ -15,7 +15,7 @@ title: buny
 {% for show in site.data.shows %}
 {% assign show_date = show.date | date: '%s' %}
 {% if show_date >= current_date %}
-<div style="margin-bottom:10px;">
+<div style="font-size: 16px; margin-bottom:10px;">
 <a href="{{ show.link }}">{{ show.date | date: '%b %-d, %Y' | downcase }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
