@@ -1,3 +1,18 @@
+- title: "NOTRAC3 x EXSTASIA"
+  date: 2026-05-23
+  location: calgary, can
+  kind: tickets
+  link: https://tickets.com
+- title: "bunys world 22 - bside radio"
+  date: 2026-05-02
+  location: vancouver, canada
+  kind: listen
+  link: ""
+- title: "bunys world 21 - bside radio"
+  date: 2026-04-04
+  location: vancouver, canada
+  kind: listen
+  link: ""
 - title: "bunys world 20 - bside radio"
   date: 2026-03-07
   location: vancouver, canada
@@ -18,11 +33,6 @@
   location: vancouver, canada
   kind: listen
   link: ""
-- title: "NOTRAC3 x EXSTASIA"
-  date: 2026-05-23
-  location: calgary, can
-  kind: tickets
-  link: https://tickets.com
 - title: "exstasia @ common underground"
   date: 2025-12-27
   location: calgary, canada
