@@ -31,4 +31,4 @@ title: buny
 [bandcamp](https://bunyy.bandcamp.com)  
 [resident advisor](https://ra.co/bunyy)  
   
-[about]({{ '/about.html' | relative_url }}) | <a href="mailto:book@buny.co">contact</a>
+<a href="mailto:book@buny.co">contact</a>
