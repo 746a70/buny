@@ -11,7 +11,7 @@ permalink: /shows.html
 <h3>{{ year.name }}</h3>
 {% assign sorted_items = year.items | sort: 'date' | reverse %}
 {% for show in sorted_items %}
-  {% capture show_text %}{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} - {{ show.location }}{% endcapture %}
+  {% capture show_text %}{{ show.date | date: '%b %-d, %Y' | downcase }} - {{ show.title }} - {{ show.location }}{% endcapture %}
   {% if show.link and show.link != '' %}
 <p><a href="{{ show.link }}">{{ show_text | strip }}</a></p>
   {% else %}
