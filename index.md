@@ -5,12 +5,11 @@ title: buny
 
 # buny
 ## dj, producer  
-
-
-## NEW
-
   
-## SHOWS
+## new
+  
+  
+## shows
 
 {% assign current_date = site.time | date: '%s' %}
 {% for show in site.data.shows %}
