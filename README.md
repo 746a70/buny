@@ -14,8 +14,7 @@ this web app has been created with HTML and CSS.
 
 ## contributing authors
 - [@746a70](https://github.com/746a70)
-- [@kaitlynhui](https://github.com/kaitlynhui)
-
+  
 ## contact
 book@buny.co
 
