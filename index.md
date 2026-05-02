@@ -4,9 +4,14 @@ title: buny
 ---
 
 # buny
-## producer, dj
-[about]({{ '/about.html' | relative_url }}) | <a href="mailto:book@buny.co">contact</a>
-<br>
+## dj  producer  
+## socials
+
+[instagram](https://instagram.com/buny________)  
+[soundcloud](https://soundcloud.com/djbuny)  
+[bandcamp](https://bunyy.bandcamp.com)  
+[resident advisor](https://ra.co/bunyy)  
+  
 ## upcoming
 
 {% assign current_date = site.time | date: '%s' %}
@@ -19,10 +24,5 @@ title: buny
 {% endif %}
 {% endfor %}
 
-### [past shows]({{ '/shows.html' | relative_url }})
-
-# socials
-
-[instagram](https://instagram.com/buny________)  
-[soundcloud](https://soundcloud.com/djbuny)  
-[resident advisor](https://ra.co/bunyy)  
+## [past shows]({{ '/shows.html' | relative_url }})  
+[about]({{ '/about.html' | relative_url }}) | <a href="mailto:book@buny.co">contact</a>
