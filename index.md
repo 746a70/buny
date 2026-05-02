@@ -4,14 +4,8 @@ title: buny
 ---
 
 # buny
-## dj  producer  
-## socials
+## dj, producer  
 
-[instagram](https://instagram.com/buny________)  
-[soundcloud](https://soundcloud.com/djbuny)  
-[bandcamp](https://bunyy.bandcamp.com)  
-[resident advisor](https://ra.co/bunyy)  
-  
 ## upcoming
 
 {% assign current_date = site.time | date: '%s' %}
@@ -22,7 +16,13 @@ title: buny
 <a href="{{ show.link }}">{{ show.date | date: '%b %-d, %Y' }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
-{% endfor %}
-
+{% endfor %}  
+  
 ## [past shows]({{ '/shows.html' | relative_url }})  
+  
+[instagram](https://instagram.com/buny________)  
+[soundcloud](https://soundcloud.com/djbuny)  
+[bandcamp](https://bunyy.bandcamp.com)  
+[resident advisor](https://ra.co/bunyy)  
+  
 [about]({{ '/about.html' | relative_url }}) | <a href="mailto:book@buny.co">contact</a>
