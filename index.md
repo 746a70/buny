@@ -2,7 +2,7 @@
 layout: default
 title: buny
 ---
-<img src="{{ '/images/360 glitch.gif' | relative url }}"%>
+<img src="{{ '/images/360 glitch.gif' | relative url }}">
 
 # buny
 ## dj, producer  
