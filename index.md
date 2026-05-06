@@ -5,7 +5,7 @@ title: buny
 <img src="{{ '/images/360 glitch.gif' | relative url }}">
 
 # buny
-## dj, producer  
+### dj, producer  
   <br>
   
 ## new

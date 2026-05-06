@@ -24,8 +24,8 @@ body {
 }
 
 h1 { font-size: 16px; font-weight: bold; margin: 0; }
-h2 { font-size: 14px; font-weight: bold; font-style: italic; margin: 0; }
-h3 { font-size: 12px; font-weight: bold; margin: 0; }
+h2 { font-size: 12px; font-weight: bold; margin: 0; }
+h3 { font-size: 26px; font-weight: bold; font-variant: small-caps; margin: 0; }
 p { font-size: 14px; margin-bottom: 15px; }
 table, th, td { font-size: 14px; }
 
