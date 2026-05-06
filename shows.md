@@ -5,20 +5,46 @@ permalink: /shows.html
 ---
 
 # shows
+
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
-{% for year in sorted_years %}
-<h1>{{ year.name }}</h1>
-{% assign sorted_items = year.items | sort: 'date' | reverse %}
-{% for show in sorted_items %}
-  {% capture show_text %}{{ show.date | date: '%b %-d, %Y' | downcase }} - {{ show.title }} - {{ show.location }}{% endcapture %}
-  {% if show.link and show.link != '' %}
-<p><a href="{{ show.link }}">{{ show_text | strip }}</a></p>
-  {% else %}
-<p>{{ show_text | strip }}</p>
-  {% endif %}
-{% endfor %}
-{% endfor %}
+
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <colgroup>
+    <col style="width: 18%;">
+    <col style="width: 52%;">
+    <col style="width: 30%;">
+  </colgroup>
+  {% for year in sorted_years %}
+  <tr>
+    <td colspan="3" style="padding: 1.2rem 0 0.5rem 0; font-size: 2em; font-weight: 700;">{{ year.name }}</td>
+  </tr>
+  {% assign sorted_items = year.items | sort: 'date' | reverse %}
+  {% for show in sorted_items %}
+  <tr>
+    <td style="white-space: nowrap; vertical-align: top; padding: 0.4rem 0.8rem 0.4rem 0;">{{ show.date | date: '%b %-d' | downcase }}</td>
+    <td style="padding: 0.4rem 0.8rem 0.4rem 0; vertical-align: top;">
+      <div style="font-size: 16px; font-weight: 700;">{{ show.title }}</div>
+      {% if show.venue and show.venue != '' %}
+      <div style="font-size: 12px;">{{ show.venue }}</div>
+      {% endif %}
+      {% if show.subtitle and show.subtitle != '' %}
+      <div style="font-size: 12px; font-style: italic;">{{ show.subtitle }}</div>
+      {% endif %}
+      {% if show.kind and show.kind != '' %}
+      <div style="font-size: 12px;">
+        {% if show.link and show.link != '' %}
+        <a href="{{ show.link }}">{{ show.kind }}</a>
+        {% else %}
+        {{ show.kind }}
+        {% endif %}
+      </div>
+      {% endif %}
+    </td>
+    <td style="padding: 0.4rem 0; vertical-align: top; font-size: 14px; font-style: italic;">{{ show.location }}</td>
+  </tr>
+  {% endfor %}
+  {% endfor %}
+</table>
 
 [< home]({{ '/' | relative_url }})
-
