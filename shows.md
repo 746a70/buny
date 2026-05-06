@@ -9,9 +9,16 @@ permalink: /shows.html
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
-{% for year in sorted_years %}
-<h1>{{ year.name }}</h1>
-<table style="width: 100%; border-collapse: collapse; margin-bottom: 1.5rem;">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+  <colgroup>
+    <col style="width: 18%;">
+    <col style="width: 52%;">
+    <col style="width: 30%;">
+  </colgroup>
+  {% for year in sorted_years %}
+  <tr>
+    <td colspan="3" style="padding: 1.2rem 0 0.5rem 0; font-size: 2em; font-weight: 700;">{{ year.name }}</td>
+  </tr>
   {% assign sorted_items = year.items | sort: 'date' | reverse %}
   {% for show in sorted_items %}
   <tr>
@@ -37,7 +44,7 @@ permalink: /shows.html
     <td style="padding: 0.4rem 0; vertical-align: top; font-size: 14px; font-style: italic;">{{ show.location }}</td>
   </tr>
   {% endfor %}
+  {% endfor %}
 </table>
-{% endfor %}
 
 [< home]({{ '/' | relative_url }})
