@@ -8,7 +8,7 @@ permalink: /shows.html
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 {% for year in sorted_years %}
-<h3>{{ year.name }}</h3>
+<h1>{{ year.name }}</h1>
 {% assign sorted_items = year.items | sort: 'date' | reverse %}
 {% for show in sorted_items %}
   {% capture show_text %}{{ show.date | date: '%b %-d, %Y' | downcase }} - {{ show.title }} - {{ show.location }}{% endcapture %}
