@@ -24,7 +24,7 @@ body {
 }
 
 h1 { font-size: 16px; font-weight: bold; margin: 0; }
-h2 { font-size: 24px; font-weight: 100; font-variant: small-caps; margin: 0; }
+h2 { font-size: 26px; font-weight: bold; font-variant: small-caps; margin: 0; }
 h3 { font-size: 20px; font-weight: 100; font-variant: small-caps; margin: 0; }
 p { font-size: 13px; margin-bottom: 15px; }
 table, th, td { font-size: 14px; }
@@ -48,7 +48,7 @@ footer {
   }
   h1 { font-size: 22px; }
   h2 { font-size: 18px; }
-}
+
 
 .shows-scroll {
   max-height: 70vh;
