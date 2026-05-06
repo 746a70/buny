@@ -15,30 +15,26 @@ permalink: /shows.html
   {% assign sorted_items = year.items | sort: 'date' | reverse %}
   {% for show in sorted_items %}
   <tr>
-    <td style="white-space: nowrap; vertical-align: top; padding: 0.4rem 0.8rem 0.4rem 0;">{{ show.date | date: '%b %-d, %Y' | downcase }}</td>
-    <td style="padding: 0.4rem 0; vertical-align: top;">
-      {% if show.link and show.link != '' %}
-      <a href="{{ show.link }}" style="text-decoration: none; color: inherit;">
-        <div style="font-size: 16px; font-weight: 700;">{{ show.title }}</div>
-        <div style="font-size: 14px;">{{ show.location }}</div>
-        {% if show.venue and show.venue != '' %}
-        <div style="font-size: 14px;">{{ show.venue }}</div>
-        {% endif %}
-        {% if show.subtitle and show.subtitle != '' %}
-        <div style="font-size: 12px; font-style: italic;">{{ show.subtitle }}</div>
-        {% endif %}
-      </a>
-      {% else %}
+    <td style="white-space: nowrap; vertical-align: top; padding: 0.4rem 0.8rem 0.4rem 0;">{{ show.date | date: '%b %-d' | downcase }}</td>
+    <td style="padding: 0.4rem 0.8rem 0.4rem 0; vertical-align: top;">
       <div style="font-size: 16px; font-weight: 700;">{{ show.title }}</div>
-      <div style="font-size: 14px;">{{ show.location }}</div>
       {% if show.venue and show.venue != '' %}
-      <div style="font-size: 14px;">{{ show.venue }}</div>
+      <div style="font-size: 12px;">{{ show.venue }}</div>
       {% endif %}
       {% if show.subtitle and show.subtitle != '' %}
       <div style="font-size: 12px; font-style: italic;">{{ show.subtitle }}</div>
       {% endif %}
+      {% if show.kind and show.kind != '' %}
+      <div style="font-size: 12px;">
+        {% if show.link and show.link != '' %}
+        <a href="{{ show.link }}">{{ show.kind }}</a>
+        {% else %}
+        {{ show.kind }}
+        {% endif %}
+      </div>
       {% endif %}
     </td>
+    <td style="padding: 0.4rem 0; vertical-align: top; font-size: 14px; font-style: italic;">{{ show.location }}</td>
   </tr>
   {% endfor %}
 </table>
