@@ -30,7 +30,7 @@ permalink: /shows.html
     <td style="padding: 0.4rem 0.8rem 0.4rem 0; vertical-align: top;">
       <div style="font-size: 16px; font-weight: 700;">
         {% if is_bw_show %}
-        <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none;">✨</a>
+        <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none;">🌐</a>
         {% endif %}
         {{ show.title }}
       </div>
