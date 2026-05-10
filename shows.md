@@ -27,18 +27,10 @@ permalink: /shows.html
   {% assign sorted_items = year.items | sort: 'date' | reverse %}
   {% for show in sorted_items %}
   {% assign normalized_title = show.title | downcase %}
-  {% assign is_bw_show = normalized_title contains 'bunys world' %}
   <tr data-title="{{ normalized_title }}" data-is-year="false">
     <td style="white-space: nowrap; vertical-align: top; padding: 0.4rem 0.8rem 0.4rem 0;">{{ show.date | date: '%b %-d' | downcase }}</td>
     <td style="padding: 0.4rem 0.8rem 0.4rem 0; vertical-align: top;">
-      <div style="font-size: 16px; font-weight: 700;">
-        {% if is_bw_show %}
-        <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none; display: inline-block; vertical-align: middle;">
-          <img src="{{ bw_icon_path }}" alt="bunys world" style="width: 0.9rem; height: 0.9rem; display: block;" />
-        </a>
-        {% endif %}
-        {{ show.title }}
-      </div>
+      <div style="font-size: 16px; font-weight: 700;">{% if show.title and show.title | downcase contains 'bunys world' %}<a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none; display: inline-block; vertical-align: middle;"><img src="{{ bw_icon_path }}" alt="bunys world" style="width: 0.9rem; height: 0.9rem; display: block;" /></a>{% endif %}{{ show.title }}</div>
       {% if show.venue and show.venue != '' %}
       <div style="font-size: 12px;">{{ show.venue }}</div>
       {% endif %}
