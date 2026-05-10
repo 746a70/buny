@@ -6,10 +6,12 @@ permalink: /shows.html
 
 # shows
 
+<button id="bw-filter-toggle" type="button" style="margin-bottom: 0.8rem;">show bunys world</button>
+
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table id="shows-table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <colgroup>
     <col style="width: 18%;">
     <col style="width: 52%;">
@@ -21,10 +23,17 @@ permalink: /shows.html
   </tr>
   {% assign sorted_items = year.items | sort: 'date' | reverse %}
   {% for show in sorted_items %}
-  <tr>
+  {% assign normalized_title = show.title | downcase %}
+  {% assign is_bw_show = normalized_title contains 'bunys world' %}
+  <tr data-title="{{ normalized_title }}" data-is-year="false">
     <td style="white-space: nowrap; vertical-align: top; padding: 0.4rem 0.8rem 0.4rem 0;">{{ show.date | date: '%b %-d' | downcase }}</td>
     <td style="padding: 0.4rem 0.8rem 0.4rem 0; vertical-align: top;">
-      <div style="font-size: 16px; font-weight: 700;">{{ show.title }}</div>
+      <div style="font-size: 16px; font-weight: 700;">
+        {% if is_bw_show %}
+        <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none;">✨</a>
+        {% endif %}
+        {{ show.title }}
+      </div>
       {% if show.venue and show.venue != '' %}
       <div style="font-size: 12px;">{{ show.venue }}</div>
       {% endif %}
@@ -46,5 +55,55 @@ permalink: /shows.html
   {% endfor %}
   {% endfor %}
 </table>
+
+<script>
+(function () {
+  var button = document.getElementById('bw-filter-toggle');
+  var table = document.getElementById('shows-table');
+  if (!button || !table) return;
+
+  var filtered = false;
+
+  function applyFilter() {
+    var rows = table.querySelectorAll('tr');
+    var currentYearRow = null;
+    var hasVisibleShowsForYear = false;
+
+    rows.forEach(function (row) {
+      var title = row.getAttribute('data-title');
+      var isShowRow = title !== null;
+
+      if (!isShowRow) {
+        if (currentYearRow && !hasVisibleShowsForYear) {
+          currentYearRow.style.display = 'none';
+        }
+        currentYearRow = row;
+        hasVisibleShowsForYear = false;
+        row.style.display = '';
+        return;
+      }
+
+      var matches = title.indexOf('bunys world') !== -1;
+      var shouldShow = !filtered || matches;
+      row.style.display = shouldShow ? '' : 'none';
+
+      if (shouldShow) {
+        hasVisibleShowsForYear = true;
+      }
+    });
+
+    if (currentYearRow && !hasVisibleShowsForYear) {
+      currentYearRow.style.display = 'none';
+    }
+
+    button.textContent = filtered ? 'show all shows' : 'show bunys world';
+  }
+
+  button.addEventListener('click', function () {
+    filtered = !filtered;
+    applyFilter();
+  });
+})();
+</script>
 
 [< home]({{ '/' | relative_url }})
