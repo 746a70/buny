@@ -6,8 +6,11 @@ permalink: /shows.html
 
 # shows
 
-<button id="bw-filter-toggle" type="button" style="margin-bottom: 0.8rem;">show bunys world</button>
+[< home]({{ '/' | relative_url }})
 
+<button id="bw-filter-toggle" type="button" style="margin: 0.8rem 0;">show bunys world</button>
+
+{% assign bw_icon_path = '/images/bw-icon.png' | relative_url %}
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
@@ -30,7 +33,9 @@ permalink: /shows.html
     <td style="padding: 0.4rem 0.8rem 0.4rem 0; vertical-align: top;">
       <div style="font-size: 16px; font-weight: 700;">
         {% if is_bw_show %}
-        <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none;">🌐</a>
+        <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none; display: inline-block; vertical-align: middle;">
+          <img src="{{ bw_icon_path }}" alt="bunys world" style="width: 0.9rem; height: 0.9rem; display: block;" />
+        </a>
         {% endif %}
         {{ show.title }}
       </div>
@@ -105,5 +110,3 @@ permalink: /shows.html
   });
 })();
 </script>
-
-[< home]({{ '/' | relative_url }})
