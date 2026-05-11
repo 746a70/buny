@@ -35,5 +35,6 @@ title: buny
   
 <span style='font-size:20px;'>&#9887;</span>  
 [[instagram]](https://instagram.com/buny________)  
-[[tiktok]](https://www.tiktok.com/@buny___)
+[[tiktok]](https://www.tiktok.com/@buny___)  
+  
 <a href="mailto:book@buny.co">contact</a>
