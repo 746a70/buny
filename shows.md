@@ -33,7 +33,7 @@ permalink: /shows.html
     <td style="vertical-align: top; padding: 0.5rem 0.5rem 0.65rem 0; text-align: right;">
       {% if has_bw_icon %}
       <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="text-decoration: none; display: inline-block; vertical-align: middle;">
-        <img src="{{ bw_icon_path }}" alt="bunys world" style="width: 2.0rem; height: 2.0rem; display: block;" />
+        <img src="{{ bw_icon_path }}" alt="bunys world" style="width: 1.9rem; height: 1.9rem; display: block;" />
       </a>
       {% endif %}
     </td>
