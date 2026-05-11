@@ -14,47 +14,46 @@ permalink: /shows.html
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
-<table id="shows-table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table id="shows-table" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
   <colgroup>
-    <col style="width: 18%;">
-    <col style="width: 52%;">
+    <col style="width: 16%;">
+    <col style="width: 8%;">
+    <col style="width: 46%;">
     <col style="width: 30%;">
   </colgroup>
   {% for year in sorted_years %}
   <tr>
-    <td colspan="3" style="padding: 1.2rem 0 0.5rem 0; font-size: 2em; font-weight: 700;">{{ year.name }}</td>
+    <td colspan="4" style="padding: 1rem 0 0.4rem 0; font-size: 1.5em; font-weight: 700;">{{ year.name }}</td>
   </tr>
   {% assign sorted_items = year.items | sort: 'date' | reverse %}
   {% for show in sorted_items %}
   {% assign has_bw_icon = show.bw == true or show.bw == 'true' %}
   <tr data-bw="{{ has_bw_icon }}">
-    <td style="white-space: nowrap; vertical-align: top; padding: 0.4rem 0.8rem 0.4rem 0;">{{ show.date | date: '%b %-d' | downcase }}</td>
-    <td style="padding: 0.4rem 0.8rem 0.4rem 0; vertical-align: top;">
-      <div style="font-size: 16px; font-weight: 700;">
-        {% if has_bw_icon %}
-        <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="margin-right: 0.35rem; text-decoration: none; display: inline-block; vertical-align: middle;">
-          <img src="{{ bw_icon_path }}" alt="bunys world" style="width: 0.9rem; height: 0.9rem; display: block;" />
-        </a>
-        {% endif %}
-        {{ show.title }}
-      </div>
-      {% if show.venue and show.venue != '' %}
-      <div style="font-size: 12px;">{{ show.venue }}</div>
-      {% endif %}
-      {% if show.subtitle and show.subtitle != '' %}
-      <div style="font-size: 12px; font-style: italic;">{{ show.subtitle }}</div>
-      {% endif %}
-      {% if show.kind and show.kind != '' %}
-      <div style="font-size: 12px;">
-        {% if show.link and show.link != '' %}
-        <a href="{{ show.link }}">{{ show.kind }}</a>
-        {% else %}
-        {{ show.kind }}
-        {% endif %}
-      </div>
+    <td style="white-space: nowrap; vertical-align: top; padding: 0.5rem 0.8rem 0.65rem 0;">{{ show.date | date: '%b %-d' | downcase }}</td>
+    <td style="vertical-align: top; padding: 0.5rem 0.5rem 0.65rem 0; text-align: right;">
+      {% if has_bw_icon %}
+      <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="text-decoration: none; display: inline-block; vertical-align: middle;">
+        <img src="{{ bw_icon_path }}" alt="bunys world" style="width: 0.9rem; height: 0.9rem; display: block;" />
+      </a>
       {% endif %}
     </td>
-    <td style="padding: 0.4rem 0; vertical-align: top; font-size: 14px; font-style: italic;">{{ show.location }}</td>
+    <td style="padding: 0.5rem 0.8rem 0.65rem 0; vertical-align: top;">
+      <div style="font-size: 16px; font-weight: 700; line-height: 1.25;">{{ show.title }}</div>
+      <div style="font-size: 12px; margin-top: 0.25rem; line-height: 1.4;">
+        {% if show.venue and show.venue != '' %}{{ show.venue }}{% endif %}
+        {% if show.flyer and show.flyer != '' %}
+          {% if show.venue and show.venue != '' %} &nbsp;|&nbsp; {% endif %}<a href="{{ show.flyer }}">flyer</a>
+        {% endif %}
+        {% if show.kind and show.kind != '' %}
+          {% if (show.venue and show.venue != '') or (show.flyer and show.flyer != '') %} &nbsp;|&nbsp; {% endif %}
+          {% if show.link and show.link != '' %}<a href="{{ show.link }}">{{ show.kind }}</a>{% else %}{{ show.kind }}{% endif %}
+        {% endif %}
+      </div>
+      {% if show.subtitle and show.subtitle != '' %}
+      <div style="font-size: 12px; font-style: italic; margin-top: 0.2rem;">{{ show.subtitle }}</div>
+      {% endif %}
+    </td>
+    <td style="padding: 0.5rem 0 0.65rem 0; vertical-align: top; font-size: 14px; font-style: italic;">{{ show.location }}</td>
   </tr>
   {% endfor %}
   {% endfor %}
