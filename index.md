@@ -2,7 +2,7 @@
 layout: default
 title: buny
 ---
-<img src="{{ '/images/360 glitch.gif' | relative url }}">
+<img src="{{ '/images/360 glitch.gif' | relative_url }}">
 
 # buny
 ### dj, producer  
@@ -20,12 +20,11 @@ title: buny
 {% for show in site.data.shows %}
 {% assign show_date = show.date | date: '%s' %}
 {% if show_date >= current_date %}
-<div style="font-size: 16px; margin-bottom:10px;">
+<div style="font-size: 14pt; margin-bottom:10px;">
 <a href="{{ show.link }}">{{ show.date | date: '%b %-d, %Y' | downcase }} - {{ show.title }} — {{ show.location }}</a>
 </div>
 {% endif %}
 {% endfor %}
-
 [[past shows]]({{ '/shows.html' | relative_url }})  
   
 [instagram](https://instagram.com/buny________)  
