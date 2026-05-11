@@ -10,7 +10,7 @@ permalink: /shows.html
 
 <button id="bw-filter-toggle" type="button" style="margin: 0.8rem 0;">show bunys world</button>
 
-{% assign bw_icon_path = '/images/bw-icon.png' | relative_url %}
+{% assign bw_icon_path = '/images/bw icon.png' | relative_url %}
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
