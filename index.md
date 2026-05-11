@@ -23,7 +23,7 @@ title: buny
 {% endif %}
 {% endfor %}
 
-<span style='font-size:20px;'>&#10022;</span>
+<span style='font-size:20px;'>&#10022;</span>  
 [past shows]({{ '/shows.html' | relative_url }})  
 [bunys world]({{ '/bw.html' | relative_url }})  
 [projects]({{ '/shows.html' | relative_url }})  
