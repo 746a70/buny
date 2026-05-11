@@ -16,10 +16,10 @@ permalink: /shows.html
 
 <table id="shows-table" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
   <colgroup>
-    <col style="width: 16%;">
     <col style="width: 8%;">
-    <col style="width: 46%;">
-    <col style="width: 30%;">
+    <col style="width: 8%;">
+    <col style="width: 68%;">
+    <col style="width: 16%;">
   </colgroup>
   {% for year in sorted_years %}
   <tr>
@@ -38,7 +38,7 @@ permalink: /shows.html
       {% endif %}
     </td>
     <td style="padding: 0.5rem 0.8rem 0.65rem 0; vertical-align: top;">
-      <div style="font-size: 16px; font-weight: 700; line-height: 1.25;">{{ show.title }}</div>
+      <div style="font-size: 14px; font-weight: 700; line-height: 1.25;">{{ show.title }}</div>
       <div style="font-size: 12px; margin-top: 0.25rem; line-height: 1.4;">
         {% if show.venue and show.venue != '' %}{{ show.venue }}{% endif %}
         {% if show.flyer and show.flyer != '' %}
