@@ -8,6 +8,7 @@
   link: 'https://ra.co/events/2431872'
 - date: 2026-05-02
   title: bunys world 22
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -15,6 +16,7 @@
   link: ''
 - date: 2026-04-04
   title: bunys world 21
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -29,6 +31,7 @@
   link: 'https://ra.co/events/2375684'
 - date: 2026-03-07
   title: bunys world 20
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -36,6 +39,7 @@
   link: ''
 - date: 2026-03-05
   title: 'bunys world bonus'
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: 'buny b2b niall-list'
@@ -43,6 +47,7 @@
   link: ''
 - date: 2026-02-22
   title: bunys world 19
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -50,6 +55,7 @@
   link: ''
 - date: 2026-01-31
   title: 'bunys world 18'
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: 'essential fall EP release stream'
@@ -64,6 +70,7 @@
   link: 'https://www.showpass.com/exstasia-2/'
 - date: 2025-12-06
   title: bunys world 17
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -78,6 +85,7 @@
   link: ''
 - date: 2025-11-01
   title: bunys world 16
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -85,6 +93,7 @@
   link: ''
 - date: 2025-10-12
   title: bunys world 15
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -120,6 +129,7 @@
   link: ''
 - date: 2025-08-02
   title: bunys world 14
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -148,6 +158,7 @@
   link: ''
 - date: 2025-05-07
   title: 'bunys world 12: buny b2b murderith - bside radio'
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -183,6 +194,7 @@
   link: 'https://ra.co/events/2098153'
 - date: 2025-02-04
   title: bunys world 11 - bside radio
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -204,6 +216,7 @@
   link: 'https://youtu.be/fXInd6x7DRc?si=u72P3VXLSIvd_NPO'
 - date: 2025-01-04
   title: bunys world 10
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -218,6 +231,7 @@
   link: 'https://ra.co/events/2047073'
 - date: 2024-12-07
   title: 'bunys world 09'
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: 'bunreleased'
@@ -225,6 +239,7 @@
   link: 'https://www.instagram.com/p/DDI0f5yPZxo/'
 - date: 2024-11-02
   title: 'bunys world 08'
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: 'buny @ werk'
@@ -246,6 +261,7 @@
   link: 'https://www.instagram.com/p/DAwMzWoS1ww/'
 - date: 2024-10-05
   title: 'bunys world 07'
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: 'with jack8 and tr4ck id?'
@@ -253,6 +269,7 @@
   link: 'https://www.instagram.com/p/DAo59tqynln/'
 - date: 2024-09-07
   title: bunys world 06
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -274,6 +291,7 @@
   link: 'https://ra.co/events/1949264'
 - date: 2024-07-07
   title: bunys world 05
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -302,6 +320,7 @@
   link: 'https://ra.co/events/1942357'
 - date: 2024-06-01
   title: bunys world 04
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -323,6 +342,7 @@
   link: 'https://www.instagram.com/p/C7Spc9_vN_P/'
 - date: 2024-05-04
   title: bunys world 03
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -337,6 +357,7 @@
   link: 'https://www.eventbrite.ca/e/drill-presents-supermarket-tickets-884627734367'
 - date: 2024-04-06
   title: bunys world 02
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
@@ -358,6 +379,7 @@
   link: 'https://www.eventbrite.ca/e/pr3br34k-vol02-tickets-833902243057'
 - date: 2024-02-25
   title: bunys world 01
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: ''
