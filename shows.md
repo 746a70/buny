@@ -8,7 +8,7 @@ permalink: /shows.html
 
 [< home]({{ '/' | relative_url }})
 
-<button id="bw-filter-toggle" type="button" style="margin: 0.8rem 0;">show bunys world</button>
+<button id="bw-filter-toggle" type="button" style="margin: 0.8rem 0;">show bunys world only</button>
 
 {% assign bw_icon_path = '/images/bw icon.png' | relative_url %}
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
