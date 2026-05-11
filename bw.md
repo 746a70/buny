@@ -6,6 +6,8 @@ permalink: /bw
 
 # bunys world
 
-welcome to the bunys world page.
+a post-club radio show.
+
+full collection available may 13, 2026.
 
 [< back to shows]({{ '/shows.html' | relative_url }})
