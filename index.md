@@ -27,7 +27,6 @@ title: buny
 
 <span style='font-size:20px;'>&#10022;</span>  
 [past shows]({{ '/shows.html' | relative_url }})  
-[bunys world]({{ '/bw.html' | relative_url }})  
 [projects]({{ '/shows.html' | relative_url }})  
   
 <span style='font-size:20px;'>&#9834;</span>  
