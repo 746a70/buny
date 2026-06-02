@@ -10,7 +10,7 @@ permalink: /shows.html
 
 <button id="bw-filter-toggle" type="button" aria-expanded="false" aria-controls="bw-filter-description" style="margin: 0.8rem 0;">bunys world</button>
 
-<p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+<p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">bunys world is my monthly show on bside.radio. it's left-field, provocative, and rebellious dance music for the ones that get it. i consider it my “lab” time, where i experiment and play around with electronic and club music i love listening to and making. i spin electronic music across all sorts of styles and genres, test out IDs and new releases of mine, have friends join me for b2bs, and occasionally throw in some special surprise sets along the way~ it's hard for me to explain, probably best if you have a listen for yourself...</p>
 
 {% assign bw_icon_path = '/images/micro.gif' | relative_url %}
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
