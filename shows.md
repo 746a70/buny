@@ -7,7 +7,7 @@ permalink: /shows.html
 # shows
 
 {% assign bw_icon_path = '/images/bw icon bw-66.png' | relative_url %}
-{% assign listen_icon_path = '/images/micro.gif' | relative_url %}
+{% assign listen_icon_path = '/images/listen.gif' | relative_url %}
 {% assign ticket_icon_path = '/images/ticket.gif' | relative_url %}
 {% assign new_icon_path = '/images/new.gif' | relative_url %}
 
