@@ -6,8 +6,6 @@ permalink: /shows.html
 
 # shows
 
-[< home]({{ '/' | relative_url }})
-
 {% assign bw_icon_path = '/images/bw icon bw-66.png' | relative_url %}
 {% assign listen_icon_path = '/images/micro.gif' | relative_url %}
 {% assign ticket_icon_path = '/images/ticket.gif' | relative_url %}
