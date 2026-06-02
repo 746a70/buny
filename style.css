@@ -12,8 +12,8 @@ body {
   box-sizing: border-box;
   overflow: auto;
   font-family: monospace;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fafafa;
+  color: #0f0f0f;
 }
 
 .container {
