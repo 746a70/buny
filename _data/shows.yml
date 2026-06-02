@@ -1,4 +1,11 @@
 ---
+- date: 2026-06-??
+  title: bunys world 23
+  bw: true
+  venue: bside radio
+  location: 'vancouver, can'
+  kind: listen
+  link: 'https://bside.radio'
 - date: 2026-05-23
   title: NOTRAC3 x EXSTASIA
   venue: twisted element
