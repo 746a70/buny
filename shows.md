@@ -8,22 +8,25 @@ permalink: /shows.html
 
 [< home]({{ '/' | relative_url }})
 
-<button id="bw-filter-toggle" type="button" aria-expanded="false" aria-controls="bw-filter-description" style="margin: 0.8rem 0;">bunys world</button>
+{% assign bw_icon_path = '/images/bw icon bw-66.png' | relative_url %}
+{% assign listen_icon_path = '/images/micro.gif' | relative_url %}
+{% assign new_icon_path = '/images/new.gif' | relative_url %}
+
+<button id="bw-filter-toggle" class="bw-filter-toggle" type="button" aria-expanded="false" aria-controls="bw-filter-description" aria-label="filter bunys world shows">
+  <img src="{{ bw_icon_path }}" alt="bunys world" />
+</button>
 
 <p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">bunys world is my monthly show on bside.radio. each month, i spin my favourite left-field, provocative, and rebellious dance music for the ones that get it. i consider it my “lab” time, where i experiment and play around with all sorts of electronic music i love listening to, with special guests, exclusive leaks, and surprises every so often~ it's hard for me to explain, probably best if you have a listen for yourself...</p>
-
-{% assign bw_icon_path = '/images/bw icon bw-66.png' | relative_url %}
-{% assign listen_icon_path = '/images/listen.gif' | relative_url %}
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
 <table id="shows-table" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
   <colgroup>
     <col style="width: 8%;">
-    <col style="width: 7%;">
     <col style="width: 5%;">
     <col style="width: 5%;">
-    <col style="width: 60%;">
+    <col style="width: 5%;">
+    <col style="width: 62%;">
     <col style="width: 15%;">
   </colgroup>
   {% for year in sorted_years %}
@@ -36,13 +39,6 @@ permalink: /shows.html
   <tr data-bw="{{ has_bw_icon }}">
     <td style="white-space: nowrap; vertical-align: top; padding: 0.5rem 0.6rem 0.65rem 0;">{{ show.date | date: '%b %-d' | downcase }}</td>
     <td style="vertical-align: top; padding: 0.5rem 0.25rem 0.65rem 0; text-align: center;">
-      {% if has_bw_icon %}
-      <a href="{{ '/bw' | relative_url }}" aria-label="bunys world page" style="text-decoration: none; display: inline-block; vertical-align: middle;">
-        <img src="{{ bw_icon_path }}" alt="bunys world" style="width: 1.9rem; height: 1.9rem; display: block;" />
-      </a>
-      {% endif %}
-    </td>
-    <td style="vertical-align: top; padding: 0.5rem 0.25rem 0.65rem 0; text-align: center;">
       {% if show.kind == 'listen' and show.link and show.link != '' %}
       <a href="{{ show.link }}" aria-label="listen to {{ show.title }}" title="listen" style="text-decoration: none; display: inline-block; vertical-align: middle;">
         <img src="{{ listen_icon_path }}" alt="listen" style="width: 1.9rem; height: 1.9rem; display: block;" />
@@ -54,6 +50,11 @@ permalink: /shows.html
       <a href="{{ show.link }}" aria-label="tickets for {{ show.title }}" title="tickets" style="text-decoration: none; display: inline-block; width: 1.9rem; height: 1.9rem; vertical-align: middle;">
         <!-- ticket gif placeholder -->
       </a>
+      {% endif %}
+    </td>
+    <td style="vertical-align: top; padding: 0.5rem 0.25rem 0.65rem 0; text-align: center;">
+      {% if show.new == true or show.new == 'true' %}
+      <img src="{{ new_icon_path }}" alt="new" title="new" style="width: 1.9rem; height: 1.9rem; display: inline-block; vertical-align: middle;" />
       {% endif %}
     </td>
     <td style="padding: 0.5rem 0.8rem 0.65rem 0; vertical-align: top;">
@@ -81,7 +82,7 @@ permalink: /shows.html
   var description = document.getElementById('bw-filter-description');
   if (!button || !table || !description) return;
 
-  var filtered = false;
+  var filtered = window.location.hash === '#bunys-world' || window.location.search.indexOf('bw=true') !== -1;
 
   function applyFilter() {
     var rows = table.querySelectorAll('tr');
@@ -124,5 +125,7 @@ permalink: /shows.html
     filtered = !filtered;
     applyFilter();
   });
+
+  applyFilter();
 })();
 </script>

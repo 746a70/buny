@@ -8,6 +8,28 @@
 </head>
 <body class="page-{{ page.title | slugify }}">
 <main class="container">
+{% unless page.url == '/' %}
+<nav class="site-nav" aria-label="main navigation">
+  <a href="{{ '/' | relative_url }}">home</a>
+  <div class="nav-dropdown">
+    <button type="button">listen</button>
+    <div class="nav-dropdown-menu">
+      <a href="#">soundcloud</a>
+      <a href="#">band camp</a>
+      <a href="#">resident advisor</a>
+    </div>
+  </div>
+  <a href="{{ '/shows.html' | relative_url }}">shows</a>
+  <div class="nav-dropdown">
+    <button type="button">socials</button>
+    <div class="nav-dropdown-menu">
+      <a href="#">instagram</a>
+      <a href="#">tiktok</a>
+      <a href="#">youtube</a>
+    </div>
+  </div>
+</nav>
+{% endunless %}
 {{ content }}
 <footer>
 <p>&copy; {{ site.time | date: '%Y' }} bunys world</p>
