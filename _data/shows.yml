@@ -151,6 +151,7 @@
   link: 'https://www.fvdedinthepark.com/'
 - date: 2025-06-07
   title: 'HOT DJs IN YOUR AREA [buny''s world 13 x FUTR]'
+  bw: true
   venue: bside radio
   location: 'vancouver, can'
   subtitle: 'buny b2b TR4CK ID?'
