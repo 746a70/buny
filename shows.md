@@ -10,10 +10,11 @@ permalink: /shows.html
 
 {% assign bw_icon_path = '/images/bw icon bw-66.png' | relative_url %}
 {% assign listen_icon_path = '/images/micro.gif' | relative_url %}
+{% assign ticket_icon_path = '/images/ticket.gif' | relative_url %}
 {% assign new_icon_path = '/images/new.gif' | relative_url %}
 
 <button id="bw-filter-toggle" class="bw-filter-toggle" type="button" aria-expanded="false" aria-controls="bw-filter-description" aria-label="filter bunys world shows">
-  <img src="{{ bw_icon_path }}" alt="bunys world" />
+  <img src="" alt="bunys world" />
 </button>
 
 <p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">bunys world is my monthly show on bside.radio. each month, i spin my favourite left-field, provocative, and rebellious dance music for the ones that get it. i consider it my “lab” time, where i experiment and play around with all sorts of electronic music i love listening to, with special guests, exclusive leaks, and surprises every so often~ it's hard for me to explain, probably best if you have a listen for yourself...</p>
@@ -48,7 +49,7 @@ permalink: /shows.html
     <td style="vertical-align: top; padding: 0.5rem 0.25rem 0.65rem 0; text-align: center;">
       {% if show.kind == 'tickets' and show.link and show.link != '' %}
       <a href="{{ show.link }}" aria-label="tickets for {{ show.title }}" title="tickets" style="text-decoration: none; display: inline-block; width: 1.9rem; height: 1.9rem; vertical-align: middle;">
-        <!-- ticket gif placeholder -->
+        <img src="{{ ticket_icon_path }}" alt="ticket" style="width: 1.9rem; height: 1.9rem; display: block;" />
       </a>
       {% endif %}
     </td>
