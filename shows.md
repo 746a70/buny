@@ -12,7 +12,7 @@ permalink: /shows.html
 
 <p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
 
-{% assign bw_icon_path = '/images/bw icon.png' | relative_url %}
+{% assign bw_icon_path = '/images/micro.gif' | relative_url %}
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
