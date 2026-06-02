@@ -8,7 +8,9 @@ permalink: /shows.html
 
 [< home]({{ '/' | relative_url }})
 
-<button id="bw-filter-toggle" type="button" style="margin: 0.8rem 0;">show bunys world only</button>
+<button id="bw-filter-toggle" type="button" aria-expanded="false" aria-controls="bw-filter-description" style="margin: 0.8rem 0;">bunys world</button>
+
+<p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
 
 {% assign bw_icon_path = '/images/bw icon.png' | relative_url %}
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
@@ -63,7 +65,8 @@ permalink: /shows.html
 (function () {
   var button = document.getElementById('bw-filter-toggle');
   var table = document.getElementById('shows-table');
-  if (!button || !table) return;
+  var description = document.getElementById('bw-filter-description');
+  if (!button || !table || !description) return;
 
   var filtered = false;
 
@@ -99,7 +102,9 @@ permalink: /shows.html
       currentYearRow.style.display = 'none';
     }
 
-    button.textContent = filtered ? 'show all shows' : 'show bunys world';
+    button.setAttribute('aria-expanded', filtered ? 'true' : 'false');
+    description.setAttribute('aria-hidden', filtered ? 'false' : 'true');
+    description.classList.toggle('is-visible', filtered);
   }
 
   button.addEventListener('click', function () {
