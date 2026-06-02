@@ -82,3 +82,63 @@ footer {
   overflow-y: auto;
   padding-right: 8px;
 }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.site-nav a,
+.site-nav button {
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+}
+
+.site-nav button {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  display: none;
+  min-width: 10rem;
+  padding: 0.35rem;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.bw-filter-toggle {
+  display: inline-block;
+  margin: 0.8rem 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bw-filter-toggle img {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+}

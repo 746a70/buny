@@ -24,7 +24,7 @@ title: buny
 
 <span style='font-size:20px;'>&#10022;</span>  
 [past shows]({{ '/shows.html' | relative_url }})  
-[bunys world]({{ '/shows.html' | relative_url }})  
+[bunys world]({{ '/shows.html#bunys-world' | relative_url }})<br>
 [projects]({{ '/shows.html' | relative_url }})  
 <a href="mailto:book@buny.co">contact</a>  
   
