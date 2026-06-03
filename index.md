@@ -25,7 +25,6 @@ title: buny
 <span style='font-size:20px;'>&#10022;</span>  
 [past shows]({{ '/shows.html' | relative_url }})  
 [bunys world]({{ '/shows.html#bunys-world' | relative_url }})<br>
-[projects]({{ '/shows.html' | relative_url }})  
 <a href="mailto:book@buny.co">contact</a>  
   
 <span style='font-size:20px;'>&#9834;</span>  
@@ -36,4 +35,5 @@ title: buny
 <span style='font-size:20px;'>&#9887;</span>  
 [[instagram]](https://instagram.com/buny________)  
 [[tiktok]](https://www.tiktok.com/@buny___)  
+[[youtube]](https://www.youtube.com/@djbuny)  
   
