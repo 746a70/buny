@@ -22,15 +22,15 @@ title: buny
 {% endif %}
 {% endfor %}
 
-<span style='font-size:20px;'>&#10022;</span>  
-[past shows]({{ '/shows.html' | relative_url }})  
-[bunys world]({{ '/shows.html#bunys-world' | relative_url }})<br>
-<a href="mailto:book@buny.co">contact</a>  
-  
 <span style='font-size:20px;'>&#9834;</span>  
 [[soundcloud]](https://soundcloud.com/djbuny)  
 [[bandcamp]](https://bunyy.bandcamp.com)  
 [[resident advisor]](https://ra.co/bunyy)  
+  
+<span style='font-size:20px;'>&#10022;</span>  
+[past shows]({{ '/shows.html' | relative_url }})  
+[bunys world]({{ '/shows.html#bunys-world' | relative_url }})<br>
+<a href="mailto:book@buny.co">contact</a>  
   
 <span style='font-size:20px;'>&#9887;</span>  
 [[instagram]](https://instagram.com/buny________)  
