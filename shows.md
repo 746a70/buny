@@ -15,7 +15,7 @@ permalink: /shows.html
 bunys world
 </button>
 
-<p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">bunys world is my monthly show on bside.radio. i spin left-field, high-energy electronic and club music for my girls, gays, queens, queers, and the ones that rly get it. buny's world is rebellious, provocative, hard-hitting, and certainly not for the average listener. it's hard for me to explain, probably best if you see and listen for yourself...<br><br> click or tap on the headphone button to stream</p>
+<p id="bw-filter-description" class="bw-filter-description" aria-hidden="true">bunys world is my monthly show on bside.radio. i spin left-field, rebellious electronic and club music for my divas, dolls, and the ones that rly get it. it's usually pretty heavy and high-energy music, but i like to throw in some twists n turns along the way. it's hard for me to explain, probably best if you see and listen for yourself...<br><br> click or tap on the headphone button to stream</p>
 {% assign grouped_shows = site.data.shows | group_by_exp: 'show', "show.date | date: '%Y'" %}
 {% assign sorted_years = grouped_shows | sort: 'name' | reverse %}
 
